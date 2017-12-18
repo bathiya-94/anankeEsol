@@ -42,7 +42,7 @@ $pip install anankeesol
 
 To begin the connection:
 ```
-sdk = anankeesol.Ananke()
+sdk = anankeesol.anankeesol.Ananke()
 sdk.begin(onConnect, onMessage, username, password, appId, deviceId, groupID)
 
 
@@ -50,9 +50,8 @@ sdk.begin(onConnect, onMessage, username, password, appId, deviceId, groupID)
 To send a message:
 
 ```
-sdk = anankeesol.Ananke()
+sdk = anankeesol.anankeesol.Ananke()
 sdk.send_message('This is a test program');
-
 ```
 
 # Sample Code
@@ -61,7 +60,7 @@ sdk.send_message('This is a test program');
 import anankeesol
 import time
 
-sdk = anankeesol.Ananke()
+sdk = anankeesol.anankeesol.Ananke()
 
 def onConnect(status):
    if status:
